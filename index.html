@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Indian Voice Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 class="title">
+      <span class="mic-icon">🎙️</span>
+      Indian Voice Assistant
+    </h1>
+
+    <button id="micBtn" class="mic-btn">
+      <span id="micIcon">🎤</span>
+      <span id="micText">Start Listening</span>
+    </button>
+
+    <p id="status" class="status idle">Idle</p>
+
+    <div class="pulse-ring" id="pulse"></div>
+
+    <audio id="audioPlayer" controls></audio>
+
+  </div>
+
+  <script src="mic.js"></script>
+</body>
+</html>
