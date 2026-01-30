@@ -58,7 +58,7 @@ async function sendAudioToBackend(audioBlob) {
   const formData = new FormData();
   formData.append("file", audioBlob, "audio.webm");
 
-  const response = await fetch("http://localhost:8000/voice", {
+  const response = await fetch("http://127.0.0.1:8000/voice", {
     method: "POST",
     body: formData
   });
@@ -77,3 +77,4 @@ async function sendAudioToBackend(audioBlob) {
     statusText.className = "status idle";
   };
 }
+
